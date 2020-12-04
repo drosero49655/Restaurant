@@ -77,11 +77,12 @@ return false;
 }else{
   return true;
 }
-}//required2
+}//required2 termina en este corchete
 
 //funcion para API
 /*fetch para clime de acuerdo a las coordinadas geograficas
 api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+dd218e08251bee45ac884d9ccd87878c
  */
 // Geolocation
 function getWeather() {
@@ -132,6 +133,7 @@ function showPosition(position) {
 
 
 //getWeather funciona
+// Funcion vieja en la que se introducía una cuidad manualmente
 /*
 function getWeather(){
 var cityInput=document.getElementById('cityInput')
@@ -164,7 +166,7 @@ tempMin.innerHTML="Temperatura mínima: "+(valTempMin-273.15).toFixed(2)+"°C";
 }//getWeather
 */
 
-/* dd218e08251bee45ac884d9ccd87878c
+/* 
 button.addEventListener('click', function(){
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=dd218e08251bee45ac884d9ccd87878c')
   .then(response=>response.json())
@@ -173,11 +175,6 @@ button.addEventListener('click', function(){
 })
 */
 
-/*
-Llave API de google
-AIzaSyCKEVh1882jhf0RCF_2gzFKzvKpj2D1Mow
-Esta activada, No funciona porque no hay billing information disponible y la tarjeta de credito es de m...
-*/
 
 
 /*
